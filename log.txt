@@ -1,0 +1,14 @@
+20: Added an ArrayList containing different subclasses of 'MenuItem' (different subclasses 
+	correspond to different items). This allowed menu items to be implemented outside of 
+	the 'SimpleNotePadRefactored' class and added to it without any changes to any existing code.
+
+24-33: Changed the names of these fields to more meaningful ones on order to improve readability
+
+34: Added separate methods for all tasks originally completed in the constructor in order to make 
+	it easier to maintain these tasks.
+
+63: Refactored notepad no longer has a main method. Instead, the main method is in 'NotePadApp.Java'.
+	This is to maintain a distinction between the notepad and a client program that can add more items.
+
+67: Removed the 'else if' blocks that handle the different action commands. Instead, each action command
+	is handled by the subclass of 'MenuItem' that corresponds to that item.
